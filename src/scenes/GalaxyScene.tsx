@@ -23,8 +23,8 @@ export const GalaxyScene = () => {
                 <pointLight position={[10, 10, 10]} intensity={1.5} castShadow />
                 <spotLight position={[-10, 20, 10]} angle={0.15} penumbra={1} intensity={2} />
 
-                <Suspense fallback={null}>
-                    <StarField />
+                <StarField />
+                <Suspense fallback={<mesh><sphereGeometry args={[1]} /><meshBasicMaterial color="blue" wireframe /></mesh>}>
                     {categories.map((category) => (
                         <Planet key={category.id} category={category} />
                     ))}

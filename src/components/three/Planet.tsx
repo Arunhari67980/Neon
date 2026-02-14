@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import { Sphere, MeshDistortMaterial, Text, Float } from '@react-three/drei';
 import * as THREE from 'three';
 import { type Category, useStore } from '../../store/useStore';
-import { OrbitingTask } from './OrbitingTask';
+import { OrbitingTask } from './OrbitingTask.tsx';
 
 interface PlanetProps {
     category: Category;
@@ -53,7 +53,6 @@ export const Planet = ({ category }: PlanetProps) => {
                     color="white"
                     anchorX="center"
                     anchorY="middle"
-                    font="/fonts/Geist-Bold.ttf" // Placeholder or systemic font
                 >
                     {category.name}
                 </Text>

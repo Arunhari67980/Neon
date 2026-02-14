@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { GalaxyScene } from './scenes/GalaxyScene';
 import { useStore } from './store/useStore';
-import { GlassPanel } from './components/ui/GlassPanel';
+import { GlassPanel } from './components/ui/GlassPanel.tsx';
 
 // Mock Data for Initial Load
 const MOCK_CATEGORIES = [

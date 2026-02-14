@@ -8,6 +8,6 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 export const supabase = createClient(
-    supabaseUrl || 'https://placeholder.supabase.co',
-    supabaseAnonKey || 'placeholder'
+    supabaseUrl || 'https://umutyxmptkkbwqyplqjl.supabase.co',
+    supabaseAnonKey || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVtdXR5eG1wdGtrYndxeXBscWpsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwNjIwNjAsImV4cCI6MjA4NjYzODA2MH0.ZfB_VH9NvZmONA1KTFVEi7qbfZR8D97cXK6bWh_gTno'
 );
